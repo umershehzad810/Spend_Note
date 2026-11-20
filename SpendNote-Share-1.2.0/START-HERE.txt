@@ -1,0 +1,25 @@
+SpendNote 1.2.0 - share package
+
+TO INSTALL ON ANDROID
+1. Copy SpendNote-1.2.0.apk to the phone.
+2. Open it and allow installation from the app used to open the file, if Android asks.
+3. If SpendNote is already installed from an earlier release by this owner, install as an update. Do not uninstall or clear data.
+4. Connect Google, choose or create the recovery passphrase, and complete setup.
+
+GOOGLE ACCOUNT ACCESS
+The owner must enable Drive API and configure Google OAuth consent. If the Google OAuth project remains in Testing, the owner must add your Google account as a test user. These server-side settings are not changed by this package. A different Google account has its own private backups.
+
+SOURCE CODE
+repo/ contains a clean local Git repository and Flutter Android source.
+Use a Flutter SDK compatible with the project's lockfile (the author used Flutter stable installed in November 2026), Android SDK and JDK 17+.
+From repo/ run:
+  flutter pub get
+  flutter analyze
+  flutter test
+  flutter run
+
+The included APK is already release-signed. Source builds need your own signing configuration to produce a release. Private owner signing keys/passwords, personal databases and build caches are deliberately excluded.
+
+A debug or self-signed build cannot update the included owner's APK and needs separate OAuth SHA-1 registration. Use the supplied APK to try the app. Keep existing records safe before removing any installed build.
+
+Automatic encrypted backups run while the app is open and connected. Keep the recovery passphrase for a new phone/reinstall. This is backup/restore, not live multi-device merging.

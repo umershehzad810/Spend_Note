@@ -1,0 +1,4 @@
+storePassword=YOUR_PRIVATE_PASSWORD
+keyPassword=YOUR_PRIVATE_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+storeFile=../signing/YOUR_RELEASE_KEY.jks
